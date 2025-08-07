@@ -1,0 +1,95 @@
+.live-run-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem;
+}
+
+.run-stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.stat-box {
+  background: #f1f5f9;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.status {
+  color: #22c55e;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.speed {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.error-message {
+  color: #ef4444;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.map-container {
+  background: #f1f5f9;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.start-button {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.start-button:hover {
+  background: #16a34a;
+}
+
+.stop-button {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.stop-button:disabled {
+  background: #fca5a5;
+  cursor: not-allowed;
+}
+
+.map-placeholder {
+  color: #64748b;
+}

@@ -1,0 +1,121 @@
+.route-planner-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem;
+}
+
+.route-form-container {
+  margin-bottom: 2rem;
+}
+
+.route-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-with-button {
+  display: flex;
+  align-items: center;
+}
+
+.input-with-button input {
+  flex: 1;
+}
+
+.current-location-button {
+  margin-left: 0.5rem;
+  background: #f1f5f9;
+  border: none;
+  border-radius: 50%;
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.2s;
+}
+
+.current-location-button:hover {
+  background: #dbeafe;
+}
+
+.plan-route-button {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.plan-route-button:hover {
+  background: #16a34a;
+}
+
+.route-details {
+  margin-top: 2rem;
+  background: #f1f5f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.route-stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-label {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-right: 0.3rem;
+}
+
+.stat-value {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.map-placeholder {
+  background: #fff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 1.2rem;
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.route-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.start-navigation-button,
+.save-route-button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.start-navigation-button:hover,
+.save-route-button:hover {
+  background: #1d4ed8;
+}

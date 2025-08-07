@@ -1,0 +1,126 @@
+/* Status Indicator Container */
+.status-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: all 0.3s ease;
+}
+
+/* Status Toggle Button */
+.status-toggle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #3498db;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.status-toggle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.status-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+/* Status Content */
+.status-content {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  min-width: 250px;
+  transform-origin: bottom right;
+  animation: slideIn 0.3s ease-out;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.status-item:last-child {
+  margin-bottom: 0;
+}
+
+.status-label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-right: 10px;
+}
+
+.status-value {
+  color: #34495e;
+  font-family: 'Courier New', monospace;
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .status-container {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .status-toggle {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .status-content {
+    min-width: 220px;
+    padding: 12px;
+  }
+  
+  .status-item {
+    font-size: 13px;
+  }
+}
